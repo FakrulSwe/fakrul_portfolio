@@ -3,18 +3,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
-    background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png), url(../images/developer.png);
-    background-repeat: no-repeat;
-    background-position: bottom right, left;
-}
-
-/* Heading & Navigation style */
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 200px;
+.text-primary {
+    color: #FD6E0A;
 }
 
 .btn-primary {
@@ -28,6 +18,25 @@ nav {
     background: #FD6E0A;
 }
 
+.header {
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+/* header and navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -38,50 +47,39 @@ nav li {
     margin-left: 50px;
 }
 
-.nav-title {
-    font-weight: 800;
-    font-size: 45px;
-}
-
-.text-primary {
-    color: #FD6E0A;
-}
-
-/* Banner style*/
-.bannar {
-    margin: 0 150px;
-    align-items: center;
+/* banner styles */
+.banner {
     display: flex;
+    align-items: center;
+    margin: 0 200px;
 }
 
-.bannar-title {
+.banner-title {
     font-weight: 700;
     font-size: 85px;
 }
 
-.sub-bannar-title {
+.banner-sub-title {
     font-weight: 600;
     font-size: 45px;
     margin-bottom: 20px;
 }
 
-.bannar-status {
+.banner-status {
     color: #757575;
     font-size: 18px;
     margin-bottom: 30px;
-    text-align: justify;
 }
 
-/* About section styles */
+/* main section */
 main {
     max-width: 1140px;
     margin: 0 auto;
 }
-
 section{
     margin-top: 130px;
 }
-
+/* about section styles */
 .about {
     background: #FFF8F3;
     border-radius: 10px;
@@ -90,34 +88,32 @@ section{
 }
 
 .section-title {
-    margin-bottom: 30px;
-    font-size: 35px;
     text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 50px;
 }
 
 .section-description {
     color: #757575;
     font-size: 18px;
-    margin-bottom: 20px;
-
+    margin-bottom: 30px;
 }
 
 .about-info-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: space-around;
 }
 
-.about-info {}
-
-.about .about-title {
-    font-size: 18px;
-    color: #585858;
+.about .info-title {
+    font-size: 20px;
+    color: #757575;
 }
 
-.about-description {
-    font-size: 16px;
-    color: #726e66;
+.info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
 }
 
 /* What I do style */
@@ -138,56 +134,51 @@ section{
     margin-bottom: 50px;
 }
 
-/* Skill style */
+/* Skill styles */
 
-.skill-container {
+.skills-container{
     display: flex;
     gap: 24px;
 }
-
-.skill {
+.skill{
     background: #FFFFFF;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding: 30px;
 }
-
-.skill-title {
+.skill-title{
+    font-weight: 700;
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-
 }
-
-.skill-description {
-    font-size: 16px;
+.skill-description{
     color: #757575;
 }
 
-/* Resume */
+/* Resume Styles */
 .resume-content{
     display: flex;
-    gap: 15px;
+    gap: 24px;
 }
-
 .resume-item{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
 .resume .title{
+    font-weight: 700;
     font-size: 25px;
     color: #474747;
     margin-bottom: 10px;
 }
 .resume .sub-title{
     color: #757575;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .resume .description{
     color: #757575;
-    font-size: 16px;
 }
 
 .resume-button{
@@ -195,20 +186,18 @@ section{
     text-align: center;
 }
 
-/* Contact style */
-
+/* contact styles */
 .contact{
     display: flex;
     gap: 100px;
-    background-color: #FFF8F3;
+    background: #FFF8F3;
     padding: 130px 200px;
 }
-
 .contact .section-title{
     text-align: left;
 }
 
-.contact input[type="text"], input[type="email"],textarea{
+.contact input[type="text"], input[type="email"], textarea{
     margin-bottom: 24px;
     border: 0;
     width: 100%;
@@ -221,5 +210,4 @@ input{
 
 .contact a{
     text-decoration: none;
-    gap: 50px;
 }
