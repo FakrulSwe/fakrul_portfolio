@@ -78,8 +78,11 @@ main {
     margin: 0 auto;
 }
 
-.about {
+section{
     margin-top: 130px;
+}
+
+.about {
     background: #FFF8F3;
     border-radius: 10px;
     padding: 130px 150px;
@@ -89,11 +92,14 @@ main {
 .section-title {
     margin-bottom: 30px;
     font-size: 35px;
+    text-align: center;
 }
 
 .section-description {
     color: #757575;
     font-size: 18px;
+    margin-bottom: 20px;
+
 }
 
 .about-info-container {
@@ -110,10 +116,10 @@ main {
 }
 
 .about-description {
-    /* font-weight: 700; */
     font-size: 16px;
     color: #726e66;
 }
+
 /* What I do style */
 .what-i-do {
     text-align: center;
@@ -122,7 +128,7 @@ main {
 }
 
 .i-do-title {
-    margin-top: 208px;
+    margin-top: 180px;
     font-size: 35px;
 }
 
@@ -132,4 +138,88 @@ main {
     margin-bottom: 50px;
 }
 
+/* Skill style */
 
+.skill-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.skill-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.skill-description {
+    font-size: 16px;
+    color: #757575;
+}
+
+/* Resume */
+.resume-content{
+    display: flex;
+    gap: 15px;
+}
+
+.resume-item{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.resume .title{
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .sub-title{
+    color: #757575;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.resume .description{
+    color: #757575;
+    font-size: 16px;
+}
+
+.resume-button{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Contact style */
+
+.contact{
+    display: flex;
+    gap: 100px;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.contact .section-title{
+    text-align: left;
+}
+
+.contact input[type="text"], input[type="email"],textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+input{
+    height: 64px;
+}
+
+.contact a{
+    text-decoration: none;
+    gap: 50px;
+}
