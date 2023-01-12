@@ -193,7 +193,7 @@ section{
     background: #FFF8F3;
     padding: 130px 200px;
 }
-.contact .section-title{
+.contact, .section-title{
     text-align: left;
 }
 
@@ -211,3 +211,72 @@ input{
 .contact a{
     text-decoration: none;
 }
+
+/* Responsive style */
+
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 10px 20px;
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+     nav, 
+     .skills-container,
+      .about-info-container,
+       .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: row-reverse;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .resume-content, .i-do-info{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+    nav li{
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992) {
+    .about, .contact{
+        padding: 20px;
+        gap: 10px;
+    }
+    .contact, .banner{
+        flex-direction: column;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+    nav ul{
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+}
+
+/* .hide{
+    display: none;
+} */
